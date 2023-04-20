@@ -1,0 +1,19 @@
+{
+    "sitios":[
+    {
+        "_id":1,
+        "url":"https://www.soydebuenaventura.com/articulos/a-los-sitios-turisticos-de-buenaventura-llegaron-19500-visitantes-en-semana-santa",
+        "clase":"single_post_heading"     
+    },
+    {
+        "_id":2,
+        "url":"https://www.ccbun.org/articulos/buenaventura-destino-ideal-en-semana-santa",
+        "clase":"entry_title entry-title"
+    },
+    {
+        "_id":3,
+        "url":"https://www.livevalledelcauca.com/buenaventura/",
+        "clase":"alert-success"     
+    }
+    ] 
+}        
