@@ -1,0 +1,45 @@
+{% extends "menu.html" %}
+{% block title %} Registro {% endblock %}
+{% block contenido %}
+<div class="container">
+    <h2>Registar links</h2>
+
+    <form class="row g-3">
+        <div class="col-md-10">
+          <label for="link" class="form-label">Url del sitio</label>
+          <input type="text" class="form-control" id="link" placeholder="Escribe aquí" required>
+        </div>
+        <div class="col-md-4">
+          <label for="clase" class="form-label">Clase del sitio</label>
+          <input type="text" class="form-control" id="clase" placeholder="Escribe aquí" required>
+        </div>
+        <div class="col-md-3">
+          <label for="tipo" class="form-label">Tipo</label>
+          <select class="form-select" id="tipo" required>
+            <option selected disabled value="">Choose...</option>
+            <option value="amor">Amor</option>
+            <option value="celebracion">Celebracion</option>
+            <option value="fallecimiento">Fallecimiento</option>
+            <option value="conquistar">Conquistar</option>
+            <option value="reconciliacion">Reconciliación</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+            <label for="detalle" class="form-label">Detalle</label>
+            <select class="form-select" id="detalle" required>
+              <option selected disabled value="">Choose...</option>
+              <option value="amor">Saludo</option>
+              <option value="celebracion">Esperanza</option>
+              <option value="fallecimiento">Fallecimiento</option>
+              <option value="conquistar">Conquistar</option>
+              <option value="reconciliacion">Reconciliación</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        <div class="col-12">
+          <button class="btn btn-dark" type="submit">Crear</button>
+        </div>
+      </form>
+</div>
+{% endblock %}

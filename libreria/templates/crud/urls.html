@@ -1,0 +1,30 @@
+{% extends "menu.html" %}
+{% block title %} urls {% endblock %}
+
+{% block contenido %}
+    <h2>Urls</h2>
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Links</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Ejecutar</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              {% for link in links %}
+              <tr>
+                <th scope="row">{{forloop.counter}}</th>
+                <td>{{ link.url }}</td>
+                <td>{{ link.tipoid }}</td>
+                <td>{{ link.estado }}</td>
+                <td><a href="{% url 'frases' link.id %}" class="btn btn-success"><i class="bi bi-play-fill"></i></a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+{% endblock %}
